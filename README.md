@@ -43,3 +43,11 @@ This tag contains the following packages:
 - axios
 - react-native-device-info
 - react-native-keyboard-aware-scroll-view
+
+### BASE_PLUS_REDUX Tag
+
+This tag adds the redux packages:
+
+- redux
+- react-redux
+- @reduxjs/toolkit
