@@ -70,6 +70,8 @@ PODS:
   - OpenSSL-Universal (1.0.2.19):
     - OpenSSL-Universal/Static (= 1.0.2.19)
   - OpenSSL-Universal/Static (1.0.2.19)
+  - Permission-Notifications (2.1.5):
+    - RNPermissions
   - RCTRequired (0.63.0)
   - RCTTypeSafety (0.63.0):
     - FBLazyVector (= 0.63.0)
@@ -306,6 +308,8 @@ PODS:
     - React
   - RNGestureHandler (1.6.1):
     - React
+  - RNPermissions (2.1.5):
+    - React
   - RNReanimated (1.9.0):
     - React
   - RNScreens (2.9.0):
@@ -341,6 +345,7 @@ DEPENDENCIES:
   - FlipperKit/SKIOSNetworkPlugin (~> 0.41.1)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - Permission-Notifications (from `../node_modules/react-native-permissions/ios/Notifications.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
@@ -368,6 +373,7 @@ DEPENDENCIES:
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNPermissions (from `../node_modules/react-native-permissions`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
@@ -399,6 +405,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  Permission-Notifications:
+    :path: "../node_modules/react-native-permissions/ios/Notifications.podspec"
   RCTRequired:
     :path: "../node_modules/react-native/Libraries/RCTRequired"
   RCTTypeSafety:
@@ -449,6 +457,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-device-info"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNPermissions:
+    :path: "../node_modules/react-native-permissions"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -475,6 +485,7 @@ SPEC CHECKSUMS:
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
   OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
+  Permission-Notifications: 231d0e1db2300b686548587d384ba414e6a93332
   RCTRequired: e46bb77db03887b3e200d34b08515c804669db99
   RCTTypeSafety: 270fed6675c42f80fb87b47d626ef3cede1505e6
   React: e008906ff1328f9bccb345ff4f7826397ad223fc
@@ -500,12 +511,13 @@ SPEC CHECKSUMS:
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
   RNDeviceInfo: ed8557a8bd6443cbc0ab5d375e6808a38a279744
   RNGestureHandler: 8f09cd560f8d533eb36da5a6c5a843af9f056b38
+  RNPermissions: ad71dd4f767ec254f2cd57592fbee02afee75467
   RNReanimated: b5ccb50650ba06f6e749c7c329a1bc3ae0c88b43
   RNScreens: c526239bbe0e957b988dacc8d75ac94ec9cb19da
   RNVectorIcons: da6fe858f5a65d7bbc3379540a889b0b12aa5976
   Yoga: 7d2edc5b410474191962e6dee88ee67f9b328b6b
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 5af54b1a2306c877c266d73f5de31026932f9c97
+PODFILE CHECKSUM: 94f2d523a783b5ea1b875988aea25fc57e84c16c
 
 COCOAPODS: 1.8.4
