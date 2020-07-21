@@ -61,3 +61,18 @@ This tag adds additional useful packages:
 - @farfarawaylabs/react-native-layout
 - @farfarawaylabs/react-native-beautiful-notifications
 - react-native-splash-screen
+
+### ELEMENTS Tag
+
+This tag adds additional useful packages:
+
+- react-native-elements
+
+### STRUCTURE Tag
+
+This tag adds the basic structure folders for the project. You can find all the new folders under the src folder.
+Each of the new folder also has its own package.json file which allows you to import things in a much more efficient way. For example:
+
+import X from 'screens/screenX'
+instead of:
+import X from '../../../screens/screenX'
