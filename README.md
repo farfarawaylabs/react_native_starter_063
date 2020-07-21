@@ -25,6 +25,10 @@ See more info here: https://www.npmjs.com/package/react-native-rename
 
 for more info check out this tutorial: https://medium.com/@appstud/add-a-splash-screen-to-a-react-native-app-810492e773f9
 
+## Additional Libraries
+
+We decided not to include react-native-reanimated library in this version of the start project as just a few weeks ago react-native-reanimated 2.0 alpha came out. Verison 2.0 is a drastic change from the current production version and if you can use it in your project it is highly recommended to do so. Still, as it's currently in alpha version we decided to leave it to you to decide if to incorporate it into your project.
+
 ## Commits
 
 Each commit represent addition of a different package so you can easily pull from the commit you want. Each commit message describe what package was added to the project
@@ -76,3 +80,27 @@ Each of the new folder also has its own package.json file which allows you to im
 import X from 'screens/screenX'
 instead of:
 import X from '../../../screens/screenX'
+
+### FUNCTIONALITY Tag
+
+This tag goes one step further and actually adds basic functionality that most apps need. You can check out this tag and then simply remove/edit things and adopt the provided functionality to your needs.
+Search the repository in your IDE for the string "TODO" for helpful hints on places you probably want to lok at and make your own edits.
+
+#### Provided Functionality
+
+- Redux: You will find a base store, slice and reducer under the "state" folder. It has the skelton code for a signin/out code and a slice holding the login use information. The provided functionality also persists the redux store after any change for offline usage.
+- Themes: You will find two base theme files under "styles/themes" for light and dark mode. The provided code will use React Native Elements theme support to load them into the app based on the device current state.
+- AppContainer.tsx: This component wraps the app and provides it with the current theme as well as the redux Store. It also uses a helper class called OfflineDataManager to load the persested redux state on app load.
+- Popup notifications: The app renders the Billboard from @farfarawaylabs/react-native-beautiful-notifications so you can easily display popup notifications throughout the app.
+
+#### Provided Navigation
+
+You will find three stacks of screens already provided:
+
+- AppIntroStack: This stack shows an intro screen to welcome the user to the app
+- AuthStack: Put here all your auth relaetd screens (login, signup, forgot password, etc)
+- MainStack: This is the main stack that holds the actual app screens. It is implemenetd as a Stack Navigator but you can easily change it to a TabNavigator based on your needs
+
+The main stack also holds a walkthrough screen. The stack checks the redux store to decide if the user seen the walkthrough already or not and based on that decide wether to show it again.
+
+The AppNavigationContainer has code that checks if the user is already logged in to decide which stack to show. You can easily edit it as your app requires.
