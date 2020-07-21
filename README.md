@@ -51,3 +51,13 @@ This tag adds the redux packages:
 - redux
 - react-redux
 - @reduxjs/toolkit
+
+### BASE_FULLY_LOADED
+
+This tag adds additional useful packages:
+
+- react-native-animatable
+- @react-native-community/react-native-permissions
+- @farfarawaylabs/react-native-layout
+- @farfarawaylabs/react-native-beautiful-notifications
+- react-native-splash-screen
