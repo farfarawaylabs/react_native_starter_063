@@ -8,7 +8,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -27,10 +27,15 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
+import SplashScreen from 'react-native-splash-screen';
 
 declare const global: {HermesInternal: null | {}};
 
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
