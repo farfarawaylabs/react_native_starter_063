@@ -81,7 +81,7 @@ import X from 'screens/screenX'
 instead of:
 import X from '../../../screens/screenX'
 
-### FUNCTIONALITY Tag
+### SCREENS Tag
 
 This tag goes one step further and actually adds basic functionality that most apps need. You can check out this tag and then simply remove/edit things and adopt the provided functionality to your needs.
 Search the repository in your IDE for the string "TODO" for helpful hints on places you probably want to lok at and make your own edits.
